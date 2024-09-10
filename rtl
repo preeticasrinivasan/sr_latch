@@ -1,0 +1,8 @@
+module sr(input r,s,
+           inout q,qb);
+wire a,b;
+ nor a1(a,r,qb);
+ nor a2(b,s,q);
+assign q=a;
+assign qb=b;
+endmodule
